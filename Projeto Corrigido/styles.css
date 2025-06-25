@@ -1,0 +1,151 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    background-color: #fff;
+    padding: 32px 28px;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(60, 60, 120, 0.12);
+    gap: 18px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #2d3a4b;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.input-text {
+    width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #d1d9e6;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border 0.2s;
+    background: #f7fafd;
+    margin-bottom: 10px;
+}
+
+.input-text:focus {
+    border: 1.5px solid #6c63ff;
+    outline: none;
+    background: #fff;
+}
+
+.erro-mensagem {
+    display: none;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 200px;
+}
+
+.wrapper-senha {
+    display: flex;
+    flex-direction: column;
+}
+.mostrar-senha {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 0.2rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.mostrar-senha:hover {
+    opacity: 1;
+}
+
+.mostrar-senha img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.mostrar-senha:hover img {
+    opacity: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.form-linha {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao-colorido,
+input[type="submit"] {
+    background: linear-gradient(90deg, #6c63ff 0%, #48c6ef 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.5s;
+    margin-top: 8px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(76, 110, 245, 0.08);
+}
+
+.botao-colorido:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #48c6ef 0%, #6c63ff 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+label {
+    padding-top: 0.3rem;
+}
+
+.links-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.links-wrapper a {
+    color: #385bbb;
+}
+
+.links-wrapper a:hover {
+    color: #6c63ff;
+}
+
+.links-wrapper a:focus {
+    color: #5650c7;
+}

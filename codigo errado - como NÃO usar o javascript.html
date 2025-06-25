@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<body onload="alert('Bem-vindo!')">
+  <h1>Login</h1>
+  <form onsubmit="alert('Enviado!'); return false;">
+    <input type="text" id="user" placeholder="Usuário">
+    <input type="password" id="pass" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+  </form>
+
+  <script>
+    var user = document.getElementById("user");
+    var pass = document.getElementById("pass");
+
+    function login() {
+      if (user.value == "" || pass.value == "") {
+        alert("Preencha os campos!");
+      } else {
+        alert("Login feito com sucesso!");
+      }
+    }
+
+    document.getElementById("user").onmouseover = function() {
+      alert("Digite seu nome de usuário");
+    };
+  </script>
+</body>
+</html>
