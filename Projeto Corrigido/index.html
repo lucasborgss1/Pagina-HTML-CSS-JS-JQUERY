@@ -1,73 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Login</title>
-  </head>
-  <body>
-    <div class="login-container">
-      <img id="logo-escola" src="logo-escola.png" alt="Logotipo da Escola" />
-      <h1 style="margin: 15px 0">Acesso</h1>
-      <form>
-        <div class="form-linha">
-          <label for="login" class="label label-padrao obrigatorio"
-            >Login:
-          </label>
-          <div class="input-wrapper">
-            <input
-              id="login"
-              class="input-txt"
-              type="text"
-              title="Digite um CPF válido ou um endereço de e-mail"
-              placeholder="Informe seu e-mail ou CPF"
-            />
-            <span class="erro-mensagem"
-              >Digite um CPF válido ou um endereço de e-mail válido.</span
-            >
-          </div>
-        </div>
-        <div class="form-linha">
-          <label for="senha" class="label label-padrao obrigatorio"
-            >Senha:</label
-          >
-          <div class="input-wrapper">
-            <div class="senha-wrapper">
-              <input
-                id="senha"
-                class="input-txt"
-                type="password"
-                title="A senha deve ter no mínimo 8 caracteres"
-                placeholder="Digite sua senha"
-              />
-              <span class="erro-mensagem"
-                >A senha deve ter no mínimo 8 caracteres.</span
-              >
-              <button
-                type="button"
-                class="mostrar-senha"
-                aria-label="Mostrar ou ocultar senha"
-              >
-                <span>Mostrar Senha</span>
-                <img src="./source/olho aberto.png" alt="Ícone mostrar senha" />
-              </button>
-            </div>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Login</title>
+    </head>
+    <body>
+        <span class="mensagem-sucesso">Login realizado com sucesso!</span>
+        <div class="login-container">
+            <img id="logo-escola" src="logo-escola.png" alt="Logotipo da Escola" />
+            <h1 style="margin: 15px 0">Acesso</h1>
+            <form>
+                <div class="form-linha">
+                    <label for="login" class="label label-padrao obrigatorio">Login: </label>
+
+                    <div class="input-wrapper">
+                        <input
+                            id="login"
+                            class="input-txt"
+                            type="text"
+                            title="Digite um CPF válido ou um endereço de e-mail"
+                            placeholder="Informe seu e-mail ou CPF"
+                        />
+                        <span class="erro-mensagem">Digite um CPF válido ou um endereço de e-mail válido.</span>
+                    </div>
+                </div>
+                <div class="form-linha">
+                    <label for="senha" class="label label-padrao obrigatorio">Senha:</label>
+                    <div class="input-wrapper">
+                        <div class="senha-wrapper">
+                            <input
+                                id="senha"
+                                class="input-txt"
+                                type="password"
+                                title="A senha deve ter no mínimo 8 caracteres"
+                                placeholder="Digite sua senha"
+                            />
+                            <span class="erro-mensagem">A senha deve ter no mínimo 8 caracteres.</span>
+                            <button type="button" class="mostrar-senha" aria-label="Mostrar ou ocultar senha">
+                                <span>Mostrar Senha</span>
+                                <img src="./source/olho aberto.png" alt="Ícone mostrar senha" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="link-recuperar">Receber link de acesso por e-mail</a>
+
+                <input class="botao botao-colorido" type="submit" value="Entrar" aria-label="Fazer Login" />
+            </form>
         </div>
 
-        <a href="#" class="link-recuperar">Receber link de acesso por e-mail</a>
-
-        <input
-          class="botao botao-colorido"
-          type="submit"
-          value="Entrar"
-          aria-label="Fazer Login"
-        />
-      </form>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="index.js"></script>
-  </body>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="index.js"></script>
+    </body>
 </html>
